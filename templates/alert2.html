@@ -1,0 +1,89 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Ransomware</title>
+
+</head>
+
+<body>
+
+
+ <div class="popup">
+        <button id="close">&times;</button>
+        <h2>Automatic Pop-Up</h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita distinctio fugiat alias iure qui, commodi minima magni ullam aliquam dignissimos?
+        </p>
+        <a href="#">Let's Go</a>
+    </div>
+    <!--Script-->
+    <script type="text/javascript">
+window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".popup").style.display = "block";
+        },
+        2000 
+    )
+});
+
+
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+});
+    </script>
+
+
+
+
+
+
+
+
+
+{% if act=="1" %}
+<h3 align="center" style="color:#009933">Hash Conseal for Data Protection</h3>
+<script>
+setTimeout(function () {
+   //Redirect with JavaScript
+   window.location.href= '/alert1?act=2';
+}, 10000);
+</script>
+
+{% elif act=="2" %}
+<h3 align="center" style="color:#003399">Data Protected..</h3>
+<script>
+setTimeout(function () {
+   //Redirect with JavaScript
+   window.location.href= '/alert1?act=3';
+}, 10000);
+</script>
+
+{% elif act=="3" %}
+<script language="javascript">
+window.close();
+</script>
+{% else %}
+
+<!--<h3 align="center" style="color:#FF0000">Ransomware Detected!!</h3>-->
+<img src="../static/assets/img/det1.jpg" width="300" height="300">
+<script>
+//Using setTimeout to execute a function after 5 seconds.
+setTimeout(function () {
+   //Redirect with JavaScript
+   window.location.href= '/alert1?act=1';
+}, 10000);
+</script>
+{% endif %}
+
+  <!-- Vendor JS Files -->
+  <script src="../static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Template Main JS File -->
+  <script src="../static/assets/js/main.js"></script>
+
+</body>
+
+</html>

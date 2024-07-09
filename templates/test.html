@@ -1,0 +1,74 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Check Uncheck All Checkbox using jQuery</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script>
+		function toggleCheckbox(isChecked) {
+			if(isChecked) {
+				$('input[name="user"]').each(function() {
+					this.checked = true;
+				});
+			} else {
+				$('input[name="user"]').each(function() {
+					this.checked = false;
+				});
+			}
+		}
+</script>
+
+<style>
+
+.CheckBoxCls 
+{
+    padding: 6px 10px;
+}
+
+.checkboxAll
+{
+	background-color: #d2d7e6;
+    margin-bottom: 15px;
+    width: 110px;
+    padding: 4px 10px;
+}
+</style>
+
+</head>
+<body>
+
+
+<div class="container">
+    <div class="row justify-content-center align-items-center" style="margin-top: 40px;">
+		
+		<div class="col-lg-12" style="margin-top: 20px;">
+		<h3 style="color:#2525D2;margin-bottom: 25px;">Select or Deselect Checkbox jQuery Example</h3>
+		
+		<div class="checkboxAll">
+			<input type="checkbox" name="checkall" id="checkall" onClick="toggleCheckbox(this.checked);" /> Select All
+		</div>
+		<div>
+				<div class="CheckBoxCls">
+					<input type="checkbox" name="user" value="Danny" /> Danny
+				</div>
+				<div class="CheckBoxCls">
+					<input type="checkbox" name="user" value="Jhon" /> Jhon
+				</div>
+				<div class="CheckBoxCls">
+					<input type="checkbox" name="user" value="Nicky" /> Nicky
+				</div>
+				<div class="CheckBoxCls">
+					<input type="checkbox" name="user" value="Devin" /> Devin
+				</div>
+		</div>
+    
+    </div>
+	</div>
+</div>
+
+</body>
+</html>

